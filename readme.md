@@ -1,4 +1,4 @@
-# Asynchronizer
+# Asynchronizer ☣️
 
 _Run Async Functions and other Bleeding Edge JS on older Node_
 
