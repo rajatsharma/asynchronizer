@@ -7,6 +7,7 @@
     "deploy": "node scripts/deploy.js deploy",
     "start": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=development nodemon index.js",
     "start:prod": "cross-env NODE_ENV=production node index.js",
+    "heroku": "NODE_ENV=production node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
   },
