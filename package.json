@@ -1,11 +1,13 @@
 {
-  "name": "nodinja",
+  "name": "asynchronizer",
   "version": "0.0.1",
-  "description": "Composable Functions in Node",
+  "description": "Asynchronous Functions with Node",
   "main": "index.js",
   "scripts": {
+    "deploy": "node scripts/deploy.js deploy",
     "start": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=development nodemon index.js",
     "start:prod": "cross-env NODE_ENV=production node index.js",
+    "heroku": "NODE_ENV=production node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
   },
@@ -25,6 +27,7 @@
     "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "gh-pages": "^1.0.0",
     "nodemon": "^1.12.1",
     "webpack": "2.1.0-beta.8",
     "webpack-externals-plugin": "^1.0.0",
