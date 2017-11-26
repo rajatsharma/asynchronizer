@@ -36,6 +36,7 @@ module.exports = {
             'es2015'
           ],
           plugins: [
+            'transform-runtime',
             'transform-async-to-generator'
           ]
         }
