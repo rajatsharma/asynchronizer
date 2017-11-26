@@ -1,7 +1,7 @@
 {
-  "name": "nodinja",
+  "name": "asynchronizer",
   "version": "0.0.1",
-  "description": "Composable Functions in Node",
+  "description": "Asynchronous Functions with Node",
   "main": "index.js",
   "scripts": {
     "deploy": "node scripts/deploy.js deploy",
