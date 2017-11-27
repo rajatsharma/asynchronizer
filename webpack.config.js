@@ -1,10 +1,9 @@
-var fs = require('fs') //eslint-disable-line
+var fs = require('fs')
 var path = require('path')
-var ExternalsPlugin = require('webpack-externals-plugin')
 
 module.exports = {
 
-  entry: path.resolve(__dirname, 'src/server.js'),
+  entry: ['@babel/polyfill', path.resolve(__dirname, 'src/server.js')],
 
   output: {
     path: __dirname + '/dist/', // eslint-disable-line
@@ -33,11 +32,18 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: [
-            'es2015'
+            ['@babel/preset-env', {
+              'targets': {
+                'node': 'current'
+              }
+            }]
           ],
           plugins: [
-            'transform-runtime',
-            'transform-async-to-generator'
+            ['@babel/plugin-transform-regenerator', {
+              'asyncGenerators': true,
+              'generators': true,
+              'async': true
+            }]
           ]
         }
       }, {
@@ -46,10 +52,8 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new ExternalsPlugin({
-      type: 'commonjs',
-      include: path.join(__dirname, './node_modules/')
-    })
-  ]
+  // https://stackoverflow.com/questions/33001237/webpack-not-excluding-node-modules
+  // From your config file, it seems like you're only excluding node_modules from being parsed with babel-loader, but not from being bundled.
+  // In order to exclude node_modules from build, https://github.com/kriasoft/react-starter-kit/issues/249
+  externals: fs.readdirSync('node_modules')
 }

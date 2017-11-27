@@ -14,13 +14,12 @@
   "author": "Rajat Sharma",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.1",
-    "babel-plugin-transform-async-to-generator": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-register": "^6.26.0",
+    "@babel/core": "7.0.0-beta.32",
+    "@babel/plugin-transform-regenerator": "7.0.0-beta.32",
+    "@babel/polyfill": "7.0.0-beta.32",
+    "@babel/preset-env": "7.0.0-beta.32",
+    "@babel/register": "7.0.0-beta.32",
+    "babel-loader": "8.0.0-beta.0",
     "cross-env": "^5.1.0",
     "eslint": "^4.9.0",
     "eslint-config-standard": "^10.2.1",
@@ -30,9 +29,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.0.0",
     "nodemon": "^1.12.1",
-    "webpack": "2.1.0-beta.8",
-    "webpack-externals-plugin": "^1.0.0",
-    "webpack-sources": "^1.0.1"
+    "webpack": "3.8.1"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
