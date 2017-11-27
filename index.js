@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === 'production') {
   require('./server.bundle.js')
 } else {
   // Babel polyfill to convert ES6 code in runtime
-  require('babel-register')
-  require('babel-polyfill')
+  require('@babel/register')
+  require('@babel/polyfill')
   require('./src/server')
 }
