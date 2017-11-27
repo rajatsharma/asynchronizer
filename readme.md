@@ -28,3 +28,7 @@ _Run Async Functions and other Bleeding Edge JS on older Node_
 ### Uses
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
+### License
+
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
