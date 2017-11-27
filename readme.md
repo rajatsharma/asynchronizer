@@ -1,5 +1,7 @@
 # Asynchronizer ☣️
 
+[![Crips](http://forthebadge.com/images/badges/built-by-crips.svg)](https://www.urbandictionary.com/define.php?term=Crips)
+
 _Run Async Functions and other Bleeding Edge JS on older Node_
 
 ### Prepacked With
