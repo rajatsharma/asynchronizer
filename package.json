@@ -9,7 +9,7 @@
     "start:prod": "cross-env NODE_ENV=production node index.js",
     "heroku": "NODE_ENV=production node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js"
+    "build": "cross-env NODE_ENV=production node scripts/build.js"
   },
   "author": "Rajat Sharma",
   "license": "MIT",
@@ -36,8 +36,5 @@
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
     "express": "^4.16.2"
-  }
-}
-express": "^4.16.2"
   }
 }
