@@ -2,7 +2,7 @@ import Express from 'express'
 import compression from 'compression'
 import bodyParser from 'body-parser'
 
-import ping from './routes/ping'
+import routes from './routes'
 import serverConfig from './config'
 // Initialize the Express App
 const app = new Express()
@@ -11,7 +11,7 @@ const app = new Express()
 app.use(compression())
 app.use(bodyParser.json({ limit: '20mb' }))
 app.use(bodyParser.urlencoded({ limit: '20mb', extended: false }))
-app.use('/', ping)
+app.use(routes)
 
 // start app
 app.listen(serverConfig.port, (error) => {
