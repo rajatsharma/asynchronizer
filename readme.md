@@ -9,12 +9,6 @@ _Run Async Functions and other Bleeding Edge JS on older Node_
 - All ES6 features(_Arrows, Generators, Spread, etc_).
 - Async Functions
 
-### Latest Tech
-
-- Asynchronizer is prepacked with bleeding edge tech. How do you know?
-
-  [![Requirements Status](https://requires.io/github/rajatsharma305/asynchronizer/requirements.svg?branch=master)](https://requires.io/github/rajatsharma305/asynchronizer/requirements/?branch=master)
-
 ### Getting Started
 
 - `npm i` to install dependencies.
