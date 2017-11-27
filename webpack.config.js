@@ -1,5 +1,5 @@
-var fs = require('fs')
 var path = require('path')
+var nodeExternals = require('webpack-node-externals')
 
 module.exports = {
 
@@ -55,5 +55,5 @@ module.exports = {
   // https://stackoverflow.com/questions/33001237/webpack-not-excluding-node-modules
   // From your config file, it seems like you're only excluding node_modules from being parsed with babel-loader, but not from being bundled.
   // In order to exclude node_modules from build, https://github.com/kriasoft/react-starter-kit/issues/249
-  externals: fs.readdirSync('node_modules')
+  externals: [nodeExternals()]
 }
