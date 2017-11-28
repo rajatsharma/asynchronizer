@@ -101,7 +101,7 @@ var _compression = _interopRequireDefault(__webpack_require__(4));
 
 var _bodyParser = _interopRequireDefault(__webpack_require__(5));
 
-var _ping = _interopRequireDefault(__webpack_require__(6));
+var _routes = _interopRequireDefault(__webpack_require__(6));
 
 var _config = _interopRequireDefault(__webpack_require__(7));
 
@@ -118,7 +118,7 @@ app.use(_bodyParser.default.urlencoded({
   limit: '20mb',
   extended: false
 }));
-app.use('/', _ping.default); // start app
+app.use(_routes.default); // start app
 
 app.listen(_config.default.port, error => {
   if (error) {
