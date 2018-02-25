@@ -1,15 +1,4 @@
-const { removeSync } = require('fs-extra')
-const webpack = require('webpack')
+const packer = require('@hellpack/packer');
+const webpackConfig = require('../paths');
 
-removeSync('dist')
-webpack(require('../webpack.config.js'), function (err, stats) {
-  if (err) {
-    console.log(err)
-    return
-  }
-
-  console.log(stats.toString({
-    colors: true,
-    chunks: false
-  }))
-})
+packer(webpackConfig).then(_ => console.log('Done')).catch(e => console.log(e)); // eslint-disable-line

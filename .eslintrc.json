@@ -1,3 +1,7 @@
 {
-    "extends": "standard"
-}
+    "extends": "@hellpack/hellpack",
+    "rules": {
+      "prefer-template": 0,
+      "no-console": 0
+    }
+  }

@@ -1,7 +1,7 @@
 {
   "name": "asynchronizer",
   "version": "0.0.1",
-  "description": "Asynchronous Functions with Node",
+  "description": "Async Functions with Node and more.",
   "main": "index.js",
   "scripts": {
     "deploy": "node scripts/deploy.js deploy",
@@ -9,33 +9,29 @@
     "start:prod": "cross-env NODE_ENV=production node index.js",
     "heroku": "NODE_ENV=production node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=production node scripts/build.js"
+    "build": "cross-env NODE_ENV=production node scripts/build.js",
+    "flow": "flow"
   },
   "author": "Rajat Sharma",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.0.0-beta.32",
-    "@babel/plugin-transform-regenerator": "7.0.0-beta.32",
-    "@babel/preset-env": "7.0.0-beta.32",
-    "@babel/register": "7.0.0-beta.32",
-    "babel-loader": "8.0.0-beta.0",
-    "cross-env": "^5.1.0",
-    "eslint": "^4.9.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.0",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "fs-extra": "4.0.2",
-    "gh-pages": "^1.0.0",
-    "nodemon": "^1.12.1",
-    "webpack": "3.8.1",
-    "webpack-node-externals": "1.6.0"
+    "@hellpack/eslint-config-hellpack": "1.0.4",
+    "babel-eslint": "8.2.2",
+    "cross-env": "5.1.0",
+    "eslint": "4.9.0",
+    "eslint-plugin-flowtype": "2.45.0",
+    "eslint-plugin-flowtype-errors": "3.3.7",
+    "eslint-plugin-import": "2.7.0",
+    "flow-bin": "0.66.0",
+    "nodemon": "1.12.1"
   },
   "dependencies": {
-    "@babel/polyfill": "7.0.0-beta.32",
-    "body-parser": "^1.18.2",
-    "compression": "^1.7.1",
-    "express": "^4.16.2"
+    "@hellpack/packer": "0.1.0",
+    "body-parser": "1.18.2",
+    "compression": "1.7.1",
+    "express": "4.16.2",
+    "flow-runtime": "0.17.0",
+    "winston": "2.4.0",
+    "winston-daily-rotate-file": "1.7.2"
   }
 }
