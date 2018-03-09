@@ -4,8 +4,7 @@
   "description": "Async Functions with Node and more.",
   "main": "index.js",
   "scripts": {
-    "deploy": "node scripts/deploy.js deploy",
-    "start": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=development nodemon index.js",
+    "start": "cross-env NODE_ENV=development node index.js",
     "start:prod": "cross-env NODE_ENV=production node index.js",
     "heroku": "NODE_ENV=production node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,16 +20,13 @@
     "eslint": "4.9.0",
     "eslint-plugin-flowtype": "2.45.0",
     "eslint-plugin-flowtype-errors": "3.3.7",
-    "eslint-plugin-import": "2.7.0",
-    "flow-bin": "0.66.0",
-    "nodemon": "1.12.1"
+    "eslint-plugin-import": "2.7.0"
   },
   "dependencies": {
-    "@hellpack/packer": "0.1.0",
+    "@lectro/enhancer-commonutils": "^1.0.0",
     "body-parser": "1.18.2",
     "compression": "1.7.1",
     "express": "4.16.2",
-    "flow-runtime": "0.17.0",
     "winston": "2.4.0",
     "winston-daily-rotate-file": "1.7.2"
   }

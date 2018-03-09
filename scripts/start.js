@@ -1,3 +1,3 @@
 const lectro = require('./lectro');
 
-lectro.build();
+lectro.dev();

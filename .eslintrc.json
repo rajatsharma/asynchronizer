@@ -1,7 +1,7 @@
 {
-    "extends": "@hellpack/hellpack",
-    "rules": {
-      "prefer-template": 0,
-      "no-console": 0
-    }
+  "extends": "@hellpack/hellpack",
+  "rules": {
+    "prefer-template": 0,
+    "no-console": 0
   }
+}

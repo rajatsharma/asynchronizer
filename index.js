@@ -1,6 +1,7 @@
-/**
- * Entry Script
- */
-const polyfill = require('@hellpack/packer/lib/polyfill');
+if(process.env.NODE_ENV === 'development'){
+    require('./scripts/start')
+}
 
-polyfill({ dev: './src/server', prod: './dist/server.bundle' });
+if(process.env.NODE_ENV === 'production'){
+    require('./build/main')
+}
