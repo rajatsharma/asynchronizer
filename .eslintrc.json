@@ -1,5 +1,11 @@
 {
-  "extends": "@hellpack/hellpack",
+  "extends": "airbnb-base",
+  "parser": "babel-eslint",
+  "plugins": [
+    "import",
+    "flowtype",
+    "flowtype-errors"
+  ],
   "rules": {
     "prefer-template": 0,
     "no-console": 0

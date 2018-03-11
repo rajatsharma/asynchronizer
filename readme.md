@@ -8,6 +8,7 @@ _Run Async Functions and other Bleeding Edge JS on older Node_
 
 - All ES6 features(_Arrows, Generators, Spread, etc_).
 - Async Functions
+- Flow Runtime
 
 ### Getting Started
 
