@@ -4,6 +4,8 @@ import bodyParser from 'body-parser';
 
 import routes from './routes';
 import serverConfig from './config';
+import responseFactory from './factories/response';
+
 // Initialize the Express App
 const app = new Express();
 
@@ -11,7 +13,7 @@ const app = new Express();
 app.use(compression());
 app.use(bodyParser.json({ limit: '20mb' }));
 app.use(bodyParser.urlencoded({ limit: '20mb', extended: false }));
-app.use(routes);
+responseFactory(app).use(routes);
 
 // start app
 app.listen(serverConfig.port, (error) => {
