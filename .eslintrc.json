@@ -10,5 +10,8 @@
     "prefer-template": 0,
     "no-console": 0,
     "global-require": 0
+  },
+  "globals": {
+    "Transformer": true
   }
 }
