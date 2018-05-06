@@ -6,7 +6,6 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development node index.js",
     "start:prod": "cross-env NODE_ENV=production node index.js",
-    "heroku": "NODE_ENV=production node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production node scripts/build.js",
     "flow": "flow"
@@ -14,6 +13,7 @@
   "author": "Rajat Sharma",
   "license": "MIT",
   "devDependencies": {
+    "@lectro/core": "1.1.2-alpha-8",
     "babel-eslint": "8.2.2",
     "cross-env": "5.1.0",
     "eslint": "4.18.2",
@@ -26,12 +26,9 @@
   },
   "dependencies": {
     "@elementary/proper": "0.2.2",
-    "@lectro/core": "1.1.2-alpha-8",
     "@lectro/enhancer-commonutils": "1.1.2-alpha-7",
     "body-parser": "1.18.2",
     "compression": "1.7.1",
-    "express": "4.16.2",
-    "winston": "2.4.0",
-    "winston-daily-rotate-file": "1.7.2"
+    "express": "4.16.2"
   }
 }
