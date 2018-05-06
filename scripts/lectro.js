@@ -1,5 +1,10 @@
 const EnhancerCommonutils = require('@lectro/enhancer-commonutils');
-const EnhancerFlowruntime = require('@lectro/enhancer-flowruntime');
+const Lectro = require('@lectro/core');
+const WebpackBar = require('webpackbar'); // eslint-disable-line
 
-const lectro = EnhancerFlowruntime.combine(new EnhancerCommonutils());
-module.exports = lectro;
+const Asynchroniser = new Lectro('node');
+module.exports = Asynchroniser.use(EnhancerCommonutils)
+  .extend((config) => {
+    config.plugins.push(new WebpackBar({ name: 'Asynchroniser' }));
+    return config;
+  });

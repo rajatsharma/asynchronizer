@@ -21,12 +21,13 @@
     "eslint-plugin-flowtype": "2.45.0",
     "eslint-plugin-flowtype-errors": "3.3.7",
     "eslint-plugin-import": "2.9.0",
-    "flow-bin": "^0.67.1"
+    "flow-bin": "^0.67.1",
+    "webpackbar": "2.6.1"
   },
   "dependencies": {
     "@elementary/proper": "0.2.2",
-    "@lectro/enhancer-commonutils": "^1.1.2-alpha-1",
-    "@lectro/enhancer-flowruntime": "^1.1.2-alpha-1",
+    "@lectro/core": "1.1.2-alpha-8",
+    "@lectro/enhancer-commonutils": "1.1.2-alpha-7",
     "body-parser": "1.18.2",
     "compression": "1.7.1",
     "express": "4.16.2",
