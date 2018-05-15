@@ -3,5 +3,5 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 if (process.env.NODE_ENV === 'production') {
-  require('./build/main');
+  require('./main'); // eslint-disable-line
 }
