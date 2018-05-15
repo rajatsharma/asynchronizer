@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development node index.js",
-    "start:prod": "cross-env NODE_ENV=production node index.js",
+    "start:prod": "NODE_ENV=production node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production node scripts/build.js",
+    "deploy": "cross-env node scripts/deploy.js",
     "flow": "flow"
   },
   "author": "Rajat Sharma",
@@ -26,9 +27,12 @@
   },
   "dependencies": {
     "@elementary/proper": "0.2.2",
+    "@lectro/enhancer-buildutils": "0.1.0",
     "@lectro/enhancer-commonutils": "1.1.2-alpha-7",
     "body-parser": "1.18.2",
     "compression": "1.7.1",
-    "express": "4.16.2"
+    "express": "4.16.2",
+    "fs-extra": "6.0.1",
+    "gh-pages": "1.1.0"
   }
 }

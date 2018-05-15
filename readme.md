@@ -14,9 +14,10 @@ _Run Async Functions and other Bleeding Edge JS on older Node_
 ### Getting Started
 
 - `npm i` to install dependencies.
-- `npm run start` to start development build with nodemon.
-- `npm run build` to make production build for older node versions.
-- `npm run start:prod` to start server on older node versions.
+- `yarn start` to start development build with nodemon.
+- `yarn build` to make production build for older node versions.
+- `yarn start:prod` to start server on older node versions.
+- `yarn deploy` to deploy to heroku.
 
 ### License
 
