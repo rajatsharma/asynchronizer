@@ -666,6 +666,10 @@
     webpack-hot-middleware "^2.22.1"
     webpack-node-externals "^1.6.0"
 
+"@lectro/enhancer-buildutils@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@lectro/enhancer-buildutils/-/enhancer-buildutils-0.1.0.tgz#b26c75839118132dcc989298a1bfc764d260d105"
+
 "@lectro/enhancer-commonutils@1.1.2-alpha-7":
   version "1.1.2-alpha-7"
   resolved "https://registry.yarnpkg.com/@lectro/enhancer-commonutils/-/enhancer-commonutils-1.1.2-alpha-7.tgz#5fd1c4f9a918ec1124c55553732958ca13382efc"
