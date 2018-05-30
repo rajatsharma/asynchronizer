@@ -14,10 +14,10 @@ class Response extends Transformer {
     this.res = null;
   }
 
-  eligibleProperties = ['data', 'message', 'status', 'error']
+  eligibleProperties = ['data', 'message', 'status', 'error'];
 
   captureOrignalResponse(res) {
-    return this.mutate((self) => {
+    return this.mutate(self => {
       self.res = res;
     });
   }
@@ -30,14 +30,14 @@ class Response extends Transformer {
   }
 
   success() {
-    return this.mutate((self) => {
+    return this.mutate(self => {
       self.status = 200;
       self.message = 'Success';
     });
   }
 
   forbidden(error) {
-    return this.mutate((self) => {
+    return this.mutate(self => {
       self.status = 403;
       self.message = 'Not Allowed';
       self.error = error;
@@ -46,7 +46,7 @@ class Response extends Transformer {
   }
 
   notfound(error) {
-    return this.mutate((self) => {
+    return this.mutate(self => {
       self.status = 404;
       self.message = 'Not Found';
       self.error = error;
@@ -55,7 +55,7 @@ class Response extends Transformer {
   }
 
   badrequest(error) {
-    return this.mutate((self) => {
+    return this.mutate(self => {
       self.status = 400;
       self.message = 'Bad Request';
       self.error = error;
@@ -64,7 +64,7 @@ class Response extends Transformer {
   }
 
   internalerror(error) {
-    return this.mutate((self) => {
+    return this.mutate(self => {
       self.status = 500;
       self.message = 'Internal Server Error';
       self.error = error;
@@ -73,9 +73,10 @@ class Response extends Transformer {
   }
 }
 
-const upgradeResponse = app => app.use((req, res, next) => {
-  res.create = data => new Response(data).captureOrignalResponse(res);
-  next();
-});
+const upgradeResponse = app =>
+  app.use((req, res, next) => {
+    res.create = data => new Response(data).captureOrignalResponse(res);
+    next();
+  });
 
 export default upgradeResponse;
