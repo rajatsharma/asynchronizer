@@ -1,6 +1,7 @@
 import Express from 'express';
 import compression from 'compression';
 import bodyParser from 'body-parser';
+import Helmet from 'helmet';
 
 import routes from './routes';
 import serverConfig from './config';
@@ -10,10 +11,11 @@ import responseFactory from './factories/response';
 const app = new Express();
 
 // Apply body Parser and server public assets and routes
-app.use(compression());
-app.use(bodyParser.json({ limit: '20mb' }));
-app.use(bodyParser.urlencoded({ limit: '20mb', extended: false }));
-responseFactory(app).use(routes);
+app
+  .use(compression()).use(Helmet())
+  .use(bodyParser.json({ limit: '20mb' }))
+  .use(bodyParser.urlencoded({ limit: '20mb', extended: false }))
+  |> responseFactory |> app => app.use(routes);
 
 // start app
 app.listen(serverConfig.port, error => {

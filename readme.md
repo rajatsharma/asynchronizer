@@ -2,7 +2,7 @@
 
 _Run Async Functions and other Bleeding Edge JS on older Node_
 
-[![Crips](http://forthebadge.com/images/badges/built-by-crips.svg)](https://www.urbandictionary.com/define.php?term=Crips)
+[![Works Every Time](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://www.urbandictionary.com/define.php?term=Crips)
 
 ### Prepacked With
 
