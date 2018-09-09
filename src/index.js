@@ -12,10 +12,11 @@ const app = new Express();
 
 // Apply body Parser and server public assets and routes
 app
-  .use(compression()).use(Helmet())
+  .use(compression())
+  .use(Helmet())
   .use(bodyParser.json({ limit: '20mb' }))
-  .use(bodyParser.urlencoded({ limit: '20mb', extended: false }))
-  |> responseFactory |> app => app.use(routes);
+  .use(bodyParser.urlencoded({ limit: '20mb', extended: false }));
+responseFactory(app).use(routes);
 
 // start app
 app.listen(serverConfig.port, error => {
