@@ -8,7 +8,7 @@ import serverConfig from './config';
 import responseFactory from './factories/response';
 
 // Initialize the Express App
-const app = new Express();
+const app = Express();
 
 // Apply body Parser and server public assets and routes
 app

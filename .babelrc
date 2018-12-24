@@ -1,0 +1,3 @@
+{
+  "presets": ["@lectro/babel-preset-lectro", "@babel/preset-typescript"]
+}
