@@ -1346,9 +1346,15 @@
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@elementary/core/-/core-0.1.4.tgz#6457ed6c2f54da21e557b1c038b9a8803b399b33"
 
-"@elementary/proper@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@elementary/proper/-/proper-0.2.2.tgz#ad293f33ea01bc73f5ff0ac6c8eeb6f3d8b0733b"
+"@elementary/proper@../elementary/packages/proper":
+  version "0.2.3"
+  dependencies:
+    "@elementary/core" "^0.1.4"
+
+"@elementary/proper@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@elementary/proper/-/proper-0.2.3.tgz#da8ae2559b3ae3eef9b5611fe11aed1efb0cf215"
+  integrity sha512-pWFIUk2GkdvUVf7oSILEUFDbeEZ0AUgY6bY+jO49gbsFt03+ApyRUC3EplxT9RixFTkT7iF/bBm2AuvAtiR5WA==
   dependencies:
     "@elementary/core" "^0.1.4"
 

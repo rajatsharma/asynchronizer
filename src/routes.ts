@@ -1,10 +1,16 @@
 import { Router } from 'express';
 
-const router = new Router();
+const router = Router();
 
-router.route('/').get(async (req, res) => {
+interface AsynchronizerResponse extends Response {
+  create(response: any): AsynchronizerResponse;
+  success(): AsynchronizerResponse;
+  send(): void;
+}
+
+router.route('/').get(async (_req, res) => {
   const response = await Promise.resolve('Server Working Fine Again');
-  res
+  (res as AsynchronizerResponse)
     .create(response)
     .success()
     .send();

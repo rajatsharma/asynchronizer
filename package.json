@@ -35,7 +35,7 @@
     "webpackbar": "2.6.1"
   },
   "dependencies": {
-    "@elementary/proper": "0.2.2",
+    "@elementary/proper": "../elementary/packages/proper",
     "@lectro/enhancer-buildutils": "0.1.0",
     "@lectro/enhancer-commonutils": "1.1.2-alpha-7",
     "body-parser": "1.18.2",
