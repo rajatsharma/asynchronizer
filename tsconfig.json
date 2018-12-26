@@ -1,0 +1,5 @@
+{
+  "extends": "./node_modules/@hellpack/tsconfig/tsconfig.json",
+  "include": ["src"],
+  "exclude": ["scripts"]
+}

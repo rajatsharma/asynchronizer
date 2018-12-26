@@ -2,6 +2,7 @@ const EnhancerCommonutils = require('@lectro/enhancer-commonutils');
 const EnhancerBuildutils = require('@lectro/enhancer-buildutils');
 const Lectro = require('@lectro/core');
 const WebpackBar = require('webpackbar');
+const path = require('path');
 
 const settr = (obj, key, val) => {
   obj[key] = val; //eslint-disable-line
@@ -14,6 +15,9 @@ module.exports = Asynchroniser.use(EnhancerCommonutils)
   .extend(config => {
     config.plugins.push(new WebpackBar({ name: 'Asynchroniser' }));
     return config;
+  })
+  .setEntry({
+    main: path.resolve(process.cwd(), 'src', 'index.ts'),
   })
   .tap(config => {
     settr(config, 'devtool', false);
