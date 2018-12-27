@@ -22,7 +22,8 @@ class Response implements Transformer {
   }
 
   mutate(fn: Function) {
-    return fn(this);
+    fn(this);
+    return this;
   }
 
   eligibleProperties = ['data', 'message', 'status', 'error'];

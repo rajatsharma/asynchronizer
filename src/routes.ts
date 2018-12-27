@@ -10,6 +10,7 @@ interface AsynchronizerResponse extends Response {
 
 router.route('/').get(async (_req, res) => {
   const response = await Promise.resolve('Server is strongly typed');
+  console.log(((res as unknown) as AsynchronizerResponse).create);
   ((res as unknown) as AsynchronizerResponse)
     .create(response)
     .success()
