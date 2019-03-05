@@ -1,0 +1,73 @@
+{
+  "name": "@enginite/asynchronizer",
+  "version": "0.2.2",
+  "description": "Create Node Server with enginite",
+  "files": [
+    "lib",
+    "enginite.js"
+  ],
+  "bin": {
+    "en-asynchronizer": "lib/en-asynchronizer.js"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "build": "rm -rf build; node scripts/build.js",
+    "wrap": "node scripts/wrap.js",
+    "release": "yarn wrap && np",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajatsharma/asynchronizer.git"
+  },
+  "keywords": [
+    "repos",
+    "js",
+    "eslint",
+    "prettier",
+    "editorconfig"
+  ],
+  "author": "Rajat Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajatsharma/asynchronizer/issues"
+  },
+  "peerDependencies": {
+    "@elementary/proper": "0.2.5",
+    "body-parser": "1.18.3",
+    "compression": "1.7.3",
+    "express": "4.16.4",
+    "helmet": "3.15.1"
+  },
+  "homepage": "https://github.com/rajatsharma/asynchronizer#readme",
+  "dependencies": {
+    "@babel/core": "7.2.2",
+    "@lectro/babel-preset-lectro": "1.1.2-beta-1",
+    "babel-loader": "8.0.5",
+    "chalk": "2.4.2",
+    "dotenv": "^6.2.0",
+    "escape-string-regexp": "1.0.5",
+    "friendly-errors-webpack-plugin": "1.7.0",
+    "purescript-psa": "0.7.3",
+    "purs-loader": "3.3.0",
+    "webpack": "4.28.4",
+    "webpack-dev-server": "3.1.14",
+    "webpack-node-externals": "1.7.2"
+  },
+  "devDependencies": {
+    "@elementary/proper": "0.2.5",
+    "@enginite/standard": "^1.2.6",
+    "@hellpack/eslint-config-hellpack": "2.0.0-alpha.5",
+    "ava": "^1.2.1",
+    "body-parser": "1.18.3",
+    "compression": "1.7.3",
+    "eslint": "5.14.1",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "express": "4.16.4",
+    "helmet": "3.15.1",
+    "np": "4.0.2",
+    "prettier": "1.16.4"
+  }
+}

@@ -1,0 +1,10 @@
+dist
+build
+coverage
+.nyc_output
+node_modules
+lerna-debug.log
+*.log
+lib
+output
+.psc-package
