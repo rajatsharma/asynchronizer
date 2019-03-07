@@ -83,9 +83,11 @@ compiler.watch(devserverConfig.watchOptions || {}, _ => {
   const serverPaths = Object.keys(compiler.options.entry).map(entry =>
     path.join(compiler.options.output.path, `${entry}.js`),
   );
-  if (previous) previous.kill();
+
+  if (previous) process.kill(-previous.pid);
   previous = spawn('node', [serverPaths[0], ...process.argv.slice(2)], {
     stdio: 'inherit',
+    detached: true,
     cwd: process.cwd(),
   });
 });
@@ -93,7 +95,7 @@ compiler.watch(devserverConfig.watchOptions || {}, _ => {
 ['SIGINT', 'SIGTERM'].forEach(sig => {
   process.on(sig, () => {
     logger.info('Killing Devserver');
-    previous.kill();
+    process.kill(-previous.pid);
     process.exit();
   });
 });
