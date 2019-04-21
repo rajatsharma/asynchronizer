@@ -853,6 +853,13 @@
   dependencies:
     "@elementary/core" "^0.1.4"
 
+"@enginite/override-config-webpack-plugin@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.npmjs.org/@enginite/override-config-webpack-plugin/-/override-config-webpack-plugin-1.2.8.tgz#53316c7cb1cdd296dea6f46ba5e57dfe319e8547"
+  integrity sha512-K/Yt1V8dQARYdJwirsV8NM5f5T8ypy394OqMbcX+gXrIdu0uzChjF9/5vQCnxnxchwiOGUhfLT2it+leM3RZDA==
+  dependencies:
+    fs-extra "^7.0.1"
+
 "@enginite/standard@^1.2.15":
   version "1.2.15"
   resolved "https://registry.npmjs.org/@enginite/standard/-/standard-1.2.15.tgz#8f5d46abe87dc82d27cd265736db28e52d331151"
@@ -3242,7 +3249,7 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-fs-extra@7.0.1:
+fs-extra@7.0.1, fs-extra@^7.0.1:
   version "7.0.1"
   resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-7.0.1.tgz#4f189c44aa123b895f722804f55ea23eadc348e9"
   integrity sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==

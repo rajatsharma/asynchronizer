@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
+const OverrideConfigWebpackPlugin = require('@enginite/override-config-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const config = require('./paths');
@@ -124,6 +125,11 @@ module.exports = options => {
       ],
     },
     plugins: [
+      new OverrideConfigWebpackPlugin(
+        {},
+        { dev: options.env === 'development' },
+        webpack,
+      ),
       // We define some sensible Webpack flags. One for the Node environment,
       // and one for dev / production. These become global variables. Note if
       // you use something like eslint or standard in your editor, you will
