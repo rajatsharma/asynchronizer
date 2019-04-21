@@ -1,6 +1,6 @@
 {
   "name": "@enginite/asynchronizer",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Create Node Server with enginite",
   "files": [
     "lib",
