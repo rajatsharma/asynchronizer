@@ -853,10 +853,10 @@
   dependencies:
     "@elementary/core" "^0.1.4"
 
-"@enginite/standard@^1.2.6":
-  version "1.2.6"
-  resolved "https://registry.npmjs.org/@enginite/standard/-/standard-1.2.6.tgz#35bbcb9de08525d02fc0d83f2dd22a623949a407"
-  integrity sha512-hKbPO3vt1ElBzduVtAucvuEsjUDSAfk0fbWklwWtC/q4hszJZs3zPcuWvsSK9L6ZI7euJ8UKsjIvn4mYp8Sp+A==
+"@enginite/standard@^1.2.14":
+  version "1.2.14"
+  resolved "https://registry.npmjs.org/@enginite/standard/-/standard-1.2.14.tgz#93411a07f603db6c0ef6a2afb2c1a09d7a57b69e"
+  integrity sha512-pLrNsa3lKYfsQuky3Aiek34lf1KjwTcBXbjbpMgvkPa1odekPIIClQ37C5t0bXE4DZcpyM7JqduT9sFoEUmQiw==
   dependencies:
     fs-extra "7.0.1"
 

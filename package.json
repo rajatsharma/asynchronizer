@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@elementary/proper": "0.2.5",
-    "@enginite/standard": "^1.2.6",
+    "@enginite/standard": "^1.2.14",
     "@hellpack/eslint-config-hellpack": "2.0.0-alpha.5",
     "ava": "^1.2.1",
     "body-parser": "1.18.3",
