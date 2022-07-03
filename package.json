@@ -1,47 +1,25 @@
 {
   "name": "asynchronizer",
-  "version": "0.0.1",
-  "description": "Async Functions with Node and more.",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "Express boilerplate in Typescript",
   "scripts": {
-    "start": "cross-env NODE_ENV=development node index.js",
-    "start:prod": "NODE_ENV=production node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cross-env NODE_ENV=production node scripts/build.js",
-    "deploy": "cross-env node scripts/deploy.js",
-    "flow": "flow"
+    "build": "tsc",
+    "start": "pnpm run build && node dist/index.js"
   },
+  "keywords": [],
   "author": "Rajat Sharma",
   "license": "MIT",
   "devDependencies": {
-    "@babel/preset-typescript": "7.1.0",
-    "@hellpack/tsconfig": "0.1.0",
-    "@lectro/babel-preset-lectro": "1.1.2-beta-1",
-    "@lectro/core": "1.1.2-alpha-24",
-    "@types/compression": "0.0.36",
-    "@types/express": "4.16.0",
-    "@types/helmet": "0.0.42",
-    "babel-eslint": "8.2.2",
-    "cross-env": "5.1.0",
-    "eslint": "4.18.2",
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-import": "2.9.0",
-    "eslint-plugin-prettier": "2.6.0",
-    "prettier": "1.13.2",
-    "typescript": "3.2.2",
-    "typescript-eslint-parser": "21.0.2",
-    "webpackbar": "2.6.1"
+    "@types/body-parser": "^1.19.2",
+    "@types/compression": "^1.7.2",
+    "@types/express": "^4.17.13",
+    "eslint-config-rsh": "github:rajatsharma/eslint-config-rsh",
+    "typescript": "4.7.4"
   },
   "dependencies": {
-    "@elementary/proper": "0.2.5",
-    "@lectro/enhancer-buildutils": "0.1.0-alpha-8",
-    "@lectro/enhancer-commonutils": "1.1.2-alpha-7",
-    "body-parser": "1.18.2",
-    "compression": "1.7.1",
-    "express": "4.16.2",
-    "fs-extra": "6.0.1",
-    "gh-pages": "1.1.0",
-    "helmet": "3.13.0"
+    "body-parser": "1.20.0",
+    "compression": "1.7.4",
+    "express": "4.18.1",
+    "helmet": "5.1.0"
   }
 }
